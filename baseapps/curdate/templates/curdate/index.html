@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div style="text-align: center;">
+		<h1>Текущая дата и время</h1>
+		{{datetime}}
+	</div>
+
+	<div style="text-align: center;">
+		<h1>таблица умножения</h1>
+		<table style="display: math;">
+		{% for i in tableum %}
+			<tr>
+			{% for j in i %}
+				<td>
+				{{j}}
+				</td>
+			{% endfor %}
+			</tr>
+    	{% endfor %}
+    	</table>
+	</div>
+
+	<div style="text-align: center;">
+		<h1>День программиста в этом году:</h1>
+		{{programmer_day}}
+	</div>
+
+</body>
+</html>
